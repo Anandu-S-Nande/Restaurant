@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<title>Restaurant</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+body,h1,h5 {font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+.bgimg {
+  background-image: url('images/pic4.jpg');
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+</style> 
+<body>
+
+<div class="bgimg w3-display-container w3-text-white ">
+  <div class="w3-display-topmiddle w3-jumbo p-4 m-3">
+    <p>Happy Plates Restaurant</p>
+  </div>
+
+  <div class="w3-display-topleft w3-container w3-xlarge p-2">
+    <p><button onclick="document.getElementById('Menu').style.display='block'" class="w3-button w3-black">Menu</button></p>
+    <p><button onclick="document.getElementById('Contact').style.display='block'" class="w3-button w3-black">Contact</button></p>
+    <p><button onclick="document.getElementById('About').style.display='block'" class="w3-button w3-black">About</button></p>
+  </div>
+
+  <div class="w3-display-bottomleft w3-container">
+    <p class="w3-xlarge">Open from</p> 
+    <p class="w3-xlarge">Monday - saturday 9am-9pm | Sunday 1pm-9pm</p>
+    <p class="w3-large">Kazhakootam, Thiruvananthapuram </p>
+    <p class="w3-large">Phone: 9633107599 </p>
+    <p>powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">Malayali Group</a></p>
+  </div>
+</div>
+
+<!--<div class="bgimg  w3-text-white flex-fill col-sm-12 col-12"> 
+    <div class="w3-display-middle  p-4">
+      <p><i> "Dear diet, things just aren’t looking good for the both of us. It’s not me, it’s you. You’re too much work. You’re boring and I can’t stop cheating on you."</i> </p>
+    </div>
+--</div>    -->
+
+
+
+<!-- Menu Modal -->
+<div id="Menu" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-black w3-display-container">
+      <span onclick="document.getElementById('Menu').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
+      <h1>Starters</h1>
+    </div>
+    <div class="w3-container">
+      <h5>Tomato Soup - <b><i class="fa fa-inr"></i> 2.50</b></h5>
+      <h5>Chicken Salad - <b><i class="fa fa-inr"></i> 3.50</b></h5>
+      <h5>Bread and Butter - <b><i class="fa fa-inr"></i> 1.00</b></h5>
+      <h5>Bread and Butter - <b><i class="fa fa-inr"></i> 1.00</b></h5>
+    </div>
+    <div class="w3-container w3-black">
+      <h1>Main Courses</h1>
+    </div>
+    <div class="w3-container">
+      <h5>Grilled Fish and Potatoes - <b><i class="fa fa-inr"></i> 8.50</b></h5>
+      <h5>Italian Pizza - <b><i class="fa fa-inr"></i> 5.50</b></h5>
+      <h5>Veggie Pasta - <b><i class="fa fa-inr"></i> 4.00</b></h5>
+      <h5>Chicken and Potatoes - <b><i class="fa fa-inr"></i> 6.50</b></h5>
+      <h5>Deluxe Burger - <b><i class="fa fa-inr"></i> 5.00</b></h5>
+    </div>
+    <div class="w3-container w3-black">
+      <h1>Desserts</h1>
+    </div>
+    <div class="w3-container">
+      <h5>Fruit Salad - <b><i class="fa fa-inr"></i> 2.50</b></h5>
+      <h5>Ice cream - <b><i class="fa fa-inr"></i> 2.00</b></h5>
+      <h5>Chocolate Cake - <b><i class="fa fa-inr"></i> 4.00</b></h5>
+      <h5>Cheese - <b><i class="fa fa-inr"></i> 5.50</b></h5>
+    </div>
+  </div>
+</div>
+
+<!-- Contact Modal -->
+<div id="Contact" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-black">
+      <span onclick="document.getElementById('Contact').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
+      <h1>Contact</h1>
+    </div>
+    <div class="w3-container">
+      <p>Reserve a table, ask for today's special or just send us a message:</p>
+      <form action="/action_page.php" target="_blank">
+        <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+        <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="How many people" required name="People"></p>
+        <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Date and time" required name="date" value="2020-11-16T20:00"></p>
+        <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
+        <p><button class="w3-button" type="submit">SEND MESSAGE</button></p>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+<!--About Modal-->
+<div id="About" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-black">
+      <span onclick="document.getElementById('About').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
+      <h1>About Us</h1>
+    </div>
+    <div class="w3-container">
+      <p>Lorem Ipsum Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard dummy text ever since the 1500s when an unknown printer took a galley of type and scrambled it to make a type specimen book it has?
+        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+        It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
+
